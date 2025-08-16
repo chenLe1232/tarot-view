@@ -1,13 +1,15 @@
-import { useState, useEffect } from 'react';
-import { Button } from './ui/button';
-import { ArrowLeft, Sparkles } from 'lucide-react';
-import { motion } from 'motion/react';
+import { useState, useEffect } from "react";
+import { Button } from "./ui/button";
+import { ArrowLeft, Sparkles } from "lucide-react";
+import { motion } from "motion/react";
 
 interface ShuffleAnimationPageProps {
   onNavigate: (page: string) => void;
 }
 
-export default function ShuffleAnimationPage({ onNavigate }: ShuffleAnimationPageProps) {
+export default function ShuffleAnimationPage({
+  onNavigate,
+}: ShuffleAnimationPageProps) {
   const [isShuffling, setIsShuffling] = useState(false);
   const [shuffleComplete, setShuffleComplete] = useState(false);
 
@@ -36,36 +38,36 @@ export default function ShuffleAnimationPage({ onNavigate }: ShuffleAnimationPag
 
   const getShuffleAnimation = (index: number) => {
     if (!isShuffling) return {};
-    
+
     return {
       x: [
         0,
         Math.random() * 500 - 250,
         Math.random() * 400 - 200,
         Math.random() * 300 - 150,
-        0
+        0,
       ],
       y: [
         0,
         Math.random() * 400 - 200,
         Math.random() * 300 - 150,
         Math.random() * 200 - 100,
-        0
+        0,
       ],
       rotate: [
         0,
         Math.random() * 720 - 360,
         Math.random() * 540 - 270,
         Math.random() * 360 - 180,
-        Math.random() * 30 - 15
+        Math.random() * 30 - 15,
       ],
       scale: [1, 0.6, 1.4, 0.8, 1],
       transition: {
         duration: 3.5,
         ease: "easeInOut",
         times: [0, 0.25, 0.5, 0.75, 1],
-        delay: index * 0.08
-      }
+        delay: index * 0.08,
+      },
     };
   };
 
@@ -73,17 +75,20 @@ export default function ShuffleAnimationPage({ onNavigate }: ShuffleAnimationPag
     <div className="min-h-screen p-4 pb-24 relative overflow-hidden">
       {/* 背景液体效果 */}
       <div className="liquid-background fixed inset-0 pointer-events-none" />
-      
+
       {/* 浮动装饰球体 */}
       <div className="floating-orb fixed top-20 left-5 w-40 h-40 pointer-events-none" />
-      <div className="floating-orb fixed bottom-32 right-8 w-32 h-32 pointer-events-none" style={{ animationDelay: '3s' }} />
+      <div
+        className="floating-orb fixed bottom-32 right-8 w-32 h-32 pointer-events-none"
+        style={{ animationDelay: "3s" }}
+      />
 
       {/* 顶部导航 */}
       <div className="flex items-center justify-between mb-8 relative z-20">
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => onNavigate('home')}
+          onClick={() => onNavigate("home")}
           className="glass-card text-muted-foreground hover:text-white border-0 rounded-xl"
         >
           <ArrowLeft size={20} className="mr-2" />
@@ -106,7 +111,9 @@ export default function ShuffleAnimationPage({ onNavigate }: ShuffleAnimationPag
             transition={{ duration: 2, repeat: Infinity }}
           >
             <p className="text-xl mb-3 text-neon-glow">正在为你洗牌...</p>
-            <p className="text-muted-foreground">静心等待，让牌组充满宇宙能量</p>
+            <p className="text-muted-foreground">
+              静心等待，让牌组充满宇宙能量
+            </p>
           </motion.div>
         ) : (
           <motion.div
@@ -131,12 +138,12 @@ export default function ShuffleAnimationPage({ onNavigate }: ShuffleAnimationPag
                 y: card.initialY,
                 rotate: card.rotation,
                 opacity: 0,
-                scale: 0.7
+                scale: 0.7,
               }}
               animate={{
                 opacity: 1,
                 scale: 1,
-                ...getShuffleAnimation(index)
+                ...getShuffleAnimation(index),
               }}
               className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
               style={{ zIndex: 15 - index }}
@@ -144,38 +151,44 @@ export default function ShuffleAnimationPage({ onNavigate }: ShuffleAnimationPag
               {/* 液体玻璃塔罗牌背面 */}
               <div className="w-20 h-28 liquid-card relative overflow-hidden rounded-xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-neon-purple/30 to-neon-blue/30" />
-                
+
                 {/* 卡背图案 */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                   <motion.div
-                    animate={{ 
+                    animate={{
                       rotate: isShuffling ? 360 : 0,
-                      scale: isShuffling ? [1, 1.2, 1] : 1
+                      scale: isShuffling ? [1, 1.2, 1] : 1,
                     }}
-                    transition={{ 
-                      rotate: { duration: isShuffling ? 1.5 : 0, repeat: isShuffling ? Infinity : 0, ease: "linear" },
-                      scale: { duration: 2, repeat: Infinity }
+                    transition={{
+                      rotate: {
+                        duration: isShuffling ? 1.5 : 0,
+                        repeat: isShuffling ? Infinity : 0,
+                        ease: "linear",
+                      },
+                      scale: { duration: 2, repeat: Infinity },
                     }}
                     className="text-gold/80 mb-2"
                   >
                     <Sparkles size={14} />
                   </motion.div>
-                  
+
                   {/* 神秘符号网格 */}
                   <div className="grid grid-cols-3 gap-0.5 opacity-60">
                     {Array.from({ length: 9 }).map((_, i) => (
-                      <motion.div 
-                        key={i} 
-                        animate={{ 
-                          opacity: isShuffling ? [0.2, 1, 0.2] : [0.4, 0.8, 0.4],
-                          scale: isShuffling ? [0.8, 1.2, 0.8] : [1, 1, 1]
+                      <motion.div
+                        key={i}
+                        animate={{
+                          opacity: isShuffling
+                            ? [0.2, 1, 0.2]
+                            : [0.4, 0.8, 0.4],
+                          scale: isShuffling ? [0.8, 1.2, 0.8] : [1, 1, 1],
                         }}
-                        transition={{ 
-                          duration: isShuffling ? 1 : 3, 
+                        transition={{
+                          duration: isShuffling ? 1 : 3,
                           repeat: Infinity,
-                          delay: i * 0.1
+                          delay: i * 0.1,
                         }}
-                        className="w-1 h-1 bg-gold/60 rounded-full" 
+                        className="w-1 h-1 bg-gold/60 rounded-full"
                       />
                     ))}
                   </div>
@@ -184,14 +197,14 @@ export default function ShuffleAnimationPage({ onNavigate }: ShuffleAnimationPag
                 {/* 洗牌时的能量波纹 */}
                 {isShuffling && (
                   <motion.div
-                    animate={{ 
+                    animate={{
                       scale: [0.8, 1.5, 0.8],
-                      opacity: [0, 0.6, 0]
+                      opacity: [0, 0.6, 0],
                     }}
-                    transition={{ 
-                      duration: 2, 
+                    transition={{
+                      duration: 2,
                       repeat: Infinity,
-                      delay: index * 0.15
+                      delay: index * 0.15,
                     }}
                     className="absolute inset-0 border-2 border-gold/50 rounded-xl"
                   />
@@ -207,15 +220,15 @@ export default function ShuffleAnimationPage({ onNavigate }: ShuffleAnimationPag
           {isShuffling && (
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
-              animate={{ 
+              animate={{
                 scale: [0, 2, 1.5, 2.5, 1],
                 opacity: [0, 0.8, 0.6, 0.4, 0],
-                rotate: 720
+                rotate: 720,
               }}
-              transition={{ 
+              transition={{
                 duration: 3.5,
                 repeat: Infinity,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
               className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40"
             >
@@ -230,15 +243,15 @@ export default function ShuffleAnimationPage({ onNavigate }: ShuffleAnimationPag
       {/* 底部按钮 */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        animate={{ 
+        animate={{
           opacity: shuffleComplete ? 1 : 0,
-          y: shuffleComplete ? 0 : 30
+          y: shuffleComplete ? 0 : 30,
         }}
         transition={{ duration: 0.8 }}
         className="text-center relative z-20"
       >
         <Button
-          onClick={() => onNavigate('draw')}
+          onClick={() => onNavigate("draw")}
           className="glass-gold-button py-6 px-10 text-lg rounded-xl shadow-2xl"
           disabled={!shuffleComplete}
         >
@@ -253,23 +266,23 @@ export default function ShuffleAnimationPage({ onNavigate }: ShuffleAnimationPag
           {Array.from({ length: 30 }).map((_, i) => (
             <motion.div
               key={i}
-              initial={{ 
+              initial={{
                 x: Math.random() * window.innerWidth,
                 y: window.innerHeight + 10,
                 opacity: 0,
-                scale: 0
+                scale: 0,
               }}
               animate={{
                 y: -10,
                 opacity: [0, 1, 0],
                 scale: [0, 1, 0],
-                x: [null, Math.random() * window.innerWidth]
+                x: [null, Math.random() * window.innerWidth],
               }}
               transition={{
                 duration: 4,
                 repeat: Infinity,
                 delay: Math.random() * 3,
-                ease: "easeOut"
+                ease: "easeOut",
               }}
               className="absolute w-1 h-1 bg-gold rounded-full animate-liquid-glow"
             />

@@ -1,0 +1,427 @@
+{
+  "react": {
+    "name": "react",
+    "version": "^18.3.0",
+    "files": [
+      "App.tsx",
+      "components/CalendarPage.tsx",
+      "components/CardAnimationPage.tsx",
+      "components/ChatPage.tsx",
+      "components/DailyCardPage.tsx",
+      "components/DrawCardPage.tsx",
+      "components/ExplorePage.tsx",
+      "components/ShuffleAnimationPage.tsx",
+      "components/figma/ImageWithFallback.tsx",
+      "components/ui/accordion.tsx",
+      "components/ui/alert-dialog.tsx",
+      "components/ui/alert.tsx",
+      "components/ui/avatar.tsx",
+      "components/ui/badge.tsx",
+      "components/ui/breadcrumb.tsx",
+      "components/ui/button.tsx",
+      "components/ui/calendar.tsx",
+      "components/ui/card.tsx",
+      "components/ui/carousel.tsx",
+      "components/ui/chart.tsx",
+      "components/ui/checkbox.tsx",
+      "components/ui/command.tsx",
+      "components/ui/context-menu.tsx",
+      "components/ui/dialog.tsx",
+      "components/ui/drawer.tsx",
+      "components/ui/dropdown-menu.tsx",
+      "components/ui/form.tsx",
+      "components/ui/hover-card.tsx",
+      "components/ui/input-otp.tsx",
+      "components/ui/input.tsx",
+      "components/ui/label.tsx",
+      "components/ui/menubar.tsx",
+      "components/ui/navigation-menu.tsx",
+      "components/ui/pagination.tsx",
+      "components/ui/popover.tsx",
+      "components/ui/progress.tsx",
+      "components/ui/radio-group.tsx",
+      "components/ui/resizable.tsx",
+      "components/ui/scroll-area.tsx",
+      "components/ui/select.tsx",
+      "components/ui/separator.tsx",
+      "components/ui/sheet.tsx",
+      "components/ui/sidebar.tsx",
+      "components/ui/slider.tsx",
+      "components/ui/switch.tsx",
+      "components/ui/table.tsx",
+      "components/ui/tabs.tsx",
+      "components/ui/textarea.tsx",
+      "components/ui/toggle-group.tsx",
+      "components/ui/toggle.tsx",
+      "components/ui/tooltip.tsx",
+      "components/ui/use-mobile.ts",
+      "main.tsx"
+    ]
+  },
+  "motion": {
+    "name": "motion",
+    "version": "^11.0.4",
+    "files": [
+      "App.tsx",
+      "components/BottomNavigation.tsx",
+      "components/CalendarPage.tsx",
+      "components/CardAnimationPage.tsx",
+      "components/ChatPage.tsx",
+      "components/DailyCardPage.tsx",
+      "components/DrawCardPage.tsx",
+      "components/ExplorePage.tsx",
+      "components/HomePage.tsx",
+      "components/ProfilePage.tsx",
+      "components/ResultPage.tsx",
+      "components/ShuffleAnimationPage.tsx"
+    ]
+  },
+  "lucide-react": {
+    "name": "lucide-react",
+    "version": "^0.332.0",
+    "files": [
+      "components/BottomNavigation.tsx",
+      "components/CalendarPage.tsx",
+      "components/CardAnimationPage.tsx",
+      "components/ChatPage.tsx",
+      "components/DailyCardPage.tsx",
+      "components/DrawCardPage.tsx",
+      "components/ExplorePage.tsx",
+      "components/HomePage.tsx",
+      "components/ProfilePage.tsx",
+      "components/ResultPage.tsx",
+      "components/ShuffleAnimationPage.tsx",
+      "components/ui/accordion.tsx",
+      "components/ui/breadcrumb.tsx",
+      "components/ui/calendar.tsx",
+      "components/ui/carousel.tsx",
+      "components/ui/checkbox.tsx",
+      "components/ui/command.tsx",
+      "components/ui/context-menu.tsx",
+      "components/ui/dialog.tsx",
+      "components/ui/dropdown-menu.tsx",
+      "components/ui/input-otp.tsx",
+      "components/ui/menubar.tsx",
+      "components/ui/navigation-menu.tsx",
+      "components/ui/pagination.tsx",
+      "components/ui/radio-group.tsx",
+      "components/ui/resizable.tsx",
+      "components/ui/select.tsx",
+      "components/ui/sheet.tsx",
+      "components/ui/sidebar.tsx"
+    ]
+  },
+  "@radix-ui/react-accordion": {
+    "name": "@radix-ui/react-accordion",
+    "version": "latest",
+    "files": [
+      "components/ui/accordion.tsx"
+    ]
+  },
+  "@radix-ui/react-alert-dialog": {
+    "name": "@radix-ui/react-alert-dialog",
+    "version": "latest",
+    "files": [
+      "components/ui/alert-dialog.tsx"
+    ]
+  },
+  "class-variance-authority": {
+    "name": "class-variance-authority",
+    "version": "^0.7.1",
+    "files": [
+      "components/ui/alert.tsx",
+      "components/ui/badge.tsx",
+      "components/ui/button.tsx",
+      "components/ui/navigation-menu.tsx",
+      "components/ui/sidebar.tsx",
+      "components/ui/toggle-group.tsx",
+      "components/ui/toggle.tsx"
+    ]
+  },
+  "@radix-ui/react-aspect-ratio": {
+    "name": "@radix-ui/react-aspect-ratio",
+    "version": "latest",
+    "files": [
+      "components/ui/aspect-ratio.tsx"
+    ]
+  },
+  "@radix-ui/react-avatar": {
+    "name": "@radix-ui/react-avatar",
+    "version": "latest",
+    "files": [
+      "components/ui/avatar.tsx"
+    ]
+  },
+  "@radix-ui/react-slot": {
+    "name": "@radix-ui/react-slot",
+    "version": "latest",
+    "files": [
+      "components/ui/badge.tsx",
+      "components/ui/breadcrumb.tsx",
+      "components/ui/button.tsx",
+      "components/ui/form.tsx",
+      "components/ui/sidebar.tsx"
+    ]
+  },
+  "react-day-picker": {
+    "name": "react-day-picker",
+    "version": "latest",
+    "files": [
+      "components/ui/calendar.tsx"
+    ]
+  },
+  "embla-carousel-react": {
+    "name": "embla-carousel-react",
+    "version": "latest",
+    "files": [
+      "components/ui/carousel.tsx"
+    ]
+  },
+  "recharts": {
+    "name": "recharts",
+    "version": "latest",
+    "files": [
+      "components/ui/chart.tsx"
+    ]
+  },
+  "@radix-ui/react-checkbox": {
+    "name": "@radix-ui/react-checkbox",
+    "version": "latest",
+    "files": [
+      "components/ui/checkbox.tsx"
+    ]
+  },
+  "@radix-ui/react-collapsible": {
+    "name": "@radix-ui/react-collapsible",
+    "version": "latest",
+    "files": [
+      "components/ui/collapsible.tsx"
+    ]
+  },
+  "cmdk": {
+    "name": "cmdk",
+    "version": "latest",
+    "files": [
+      "components/ui/command.tsx"
+    ]
+  },
+  "@radix-ui/react-context-menu": {
+    "name": "@radix-ui/react-context-menu",
+    "version": "latest",
+    "files": [
+      "components/ui/context-menu.tsx"
+    ]
+  },
+  "@radix-ui/react-dialog": {
+    "name": "@radix-ui/react-dialog",
+    "version": "latest",
+    "files": [
+      "components/ui/dialog.tsx",
+      "components/ui/sheet.tsx"
+    ]
+  },
+  "vaul": {
+    "name": "vaul",
+    "version": "latest",
+    "files": [
+      "components/ui/drawer.tsx"
+    ]
+  },
+  "@radix-ui/react-dropdown-menu": {
+    "name": "@radix-ui/react-dropdown-menu",
+    "version": "latest",
+    "files": [
+      "components/ui/dropdown-menu.tsx"
+    ]
+  },
+  "@radix-ui/react-label": {
+    "name": "@radix-ui/react-label",
+    "version": "latest",
+    "files": [
+      "components/ui/form.tsx",
+      "components/ui/label.tsx"
+    ]
+  },
+  "react-hook-form": {
+    "name": "react-hook-form",
+    "version": "^7.55.0",
+    "files": [
+      "components/ui/form.tsx"
+    ]
+  },
+  "@radix-ui/react-hover-card": {
+    "name": "@radix-ui/react-hover-card",
+    "version": "latest",
+    "files": [
+      "components/ui/hover-card.tsx"
+    ]
+  },
+  "input-otp": {
+    "name": "input-otp",
+    "version": "latest",
+    "files": [
+      "components/ui/input-otp.tsx"
+    ]
+  },
+  "@radix-ui/react-menubar": {
+    "name": "@radix-ui/react-menubar",
+    "version": "latest",
+    "files": [
+      "components/ui/menubar.tsx"
+    ]
+  },
+  "@radix-ui/react-navigation-menu": {
+    "name": "@radix-ui/react-navigation-menu",
+    "version": "latest",
+    "files": [
+      "components/ui/navigation-menu.tsx"
+    ]
+  },
+  "@radix-ui/react-popover": {
+    "name": "@radix-ui/react-popover",
+    "version": "latest",
+    "files": [
+      "components/ui/popover.tsx"
+    ]
+  },
+  "@radix-ui/react-progress": {
+    "name": "@radix-ui/react-progress",
+    "version": "latest",
+    "files": [
+      "components/ui/progress.tsx"
+    ]
+  },
+  "@radix-ui/react-radio-group": {
+    "name": "@radix-ui/react-radio-group",
+    "version": "latest",
+    "files": [
+      "components/ui/radio-group.tsx"
+    ]
+  },
+  "react-resizable-panels": {
+    "name": "react-resizable-panels",
+    "version": "latest",
+    "files": [
+      "components/ui/resizable.tsx"
+    ]
+  },
+  "@radix-ui/react-scroll-area": {
+    "name": "@radix-ui/react-scroll-area",
+    "version": "latest",
+    "files": [
+      "components/ui/scroll-area.tsx"
+    ]
+  },
+  "@radix-ui/react-select": {
+    "name": "@radix-ui/react-select",
+    "version": "latest",
+    "files": [
+      "components/ui/select.tsx"
+    ]
+  },
+  "@radix-ui/react-separator": {
+    "name": "@radix-ui/react-separator",
+    "version": "latest",
+    "files": [
+      "components/ui/separator.tsx"
+    ]
+  },
+  "@radix-ui/react-slider": {
+    "name": "@radix-ui/react-slider",
+    "version": "latest",
+    "files": [
+      "components/ui/slider.tsx"
+    ]
+  },
+  "next-themes": {
+    "name": "next-themes",
+    "version": "latest",
+    "files": [
+      "components/ui/sonner.tsx"
+    ]
+  },
+  "sonner": {
+    "name": "sonner",
+    "version": "latest",
+    "files": [
+      "components/ui/sonner.tsx"
+    ]
+  },
+  "@radix-ui/react-switch": {
+    "name": "@radix-ui/react-switch",
+    "version": "latest",
+    "files": [
+      "components/ui/switch.tsx"
+    ]
+  },
+  "@radix-ui/react-tabs": {
+    "name": "@radix-ui/react-tabs",
+    "version": "latest",
+    "files": [
+      "components/ui/tabs.tsx"
+    ]
+  },
+  "@radix-ui/react-toggle-group": {
+    "name": "@radix-ui/react-toggle-group",
+    "version": "latest",
+    "files": [
+      "components/ui/toggle-group.tsx"
+    ]
+  },
+  "@radix-ui/react-toggle": {
+    "name": "@radix-ui/react-toggle",
+    "version": "latest",
+    "files": [
+      "components/ui/toggle.tsx"
+    ]
+  },
+  "@radix-ui/react-tooltip": {
+    "name": "@radix-ui/react-tooltip",
+    "version": "latest",
+    "files": [
+      "components/ui/tooltip.tsx"
+    ]
+  },
+  "clsx": {
+    "name": "clsx",
+    "version": "^2.1.0",
+    "files": [
+      "components/ui/utils.ts"
+    ]
+  },
+  "tailwind-merge": {
+    "name": "tailwind-merge",
+    "version": "^2.3.0",
+    "files": [
+      "components/ui/utils.ts"
+    ]
+  },
+  "react-dom": {
+    "name": "react-dom",
+    "version": "^18.3.0",
+    "files": [
+      "main.tsx"
+    ]
+  },
+  "vite": {
+    "name": "vite",
+    "version": "^5.0.0",
+    "files": [
+      "vite.config.ts"
+    ]
+  },
+  "@vitejs/plugin-react": {
+    "name": "@vitejs/plugin-react",
+    "version": "^4.0.0",
+    "files": [
+      "vite.config.ts"
+    ]
+  },
+  "path": {
+    "name": "path",
+    "version": "latest",
+    "files": [
+      "vite.config.ts"
+    ]
+  }
+}

@@ -1,7 +1,7 @@
-import { Button } from './ui/button';
-import { Card } from './ui/card';
-import { ArrowLeft, MessageCircle, RefreshCw } from 'lucide-react';
-import { motion } from 'motion/react';
+import { Button } from "./ui/button";
+import { Card } from "./ui/card";
+import { ArrowLeft, MessageCircle, RefreshCw } from "lucide-react";
+import { motion } from "motion/react";
 
 interface ResultPageProps {
   onNavigate: (page: string) => void;
@@ -9,10 +9,11 @@ interface ResultPageProps {
 
 export default function ResultPage({ onNavigate }: ResultPageProps) {
   const cardData = {
-    name: '愚者',
-    englishName: 'The Fool',
-    number: '0',
-    description: '愚者代表着新的开始和无限的可能性。这是一张充满希望和冒险精神的牌，暗示着你正处在人生的一个新起点。保持开放的心态，勇敢地迎接未知的挑战。你的直觉会指引你走向正确的方向，相信自己的内心声音。'
+    name: "愚者",
+    englishName: "The Fool",
+    number: "0",
+    description:
+      "愚者代表着新的开始和无限的可能性。这是一张充满希望和冒险精神的牌，暗示着你正处在人生的一个新起点。保持开放的心态，勇敢地迎接未知的挑战。你的直觉会指引你走向正确的方向，相信自己的内心声音。",
   };
 
   return (
@@ -22,7 +23,7 @@ export default function ResultPage({ onNavigate }: ResultPageProps) {
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => onNavigate('home')}
+          onClick={() => onNavigate("home")}
           className="text-muted-foreground"
         >
           <ArrowLeft size={20} className="mr-2" />
@@ -42,7 +43,7 @@ export default function ResultPage({ onNavigate }: ResultPageProps) {
         >
           <Card className="w-48 h-72 bg-mystical-gradient border-gold relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-purple-500/20" />
-            
+
             {/* 卡牌内容 */}
             <div className="h-full flex flex-col items-center justify-center text-white p-4">
               <div className="text-sm text-gold mb-2">{cardData.number}</div>
@@ -86,14 +87,14 @@ export default function ResultPage({ onNavigate }: ResultPageProps) {
           className="flex gap-3 w-full max-w-sm"
         >
           <Button
-            onClick={() => onNavigate('chat')}
+            onClick={() => onNavigate("chat")}
             className="flex-1 bg-neon-gradient hover:opacity-90 text-white rounded-xl"
           >
             <MessageCircle size={16} className="mr-2" />
             深度解读
           </Button>
           <Button
-            onClick={() => onNavigate('draw')}
+            onClick={() => onNavigate("draw")}
             variant="outline"
             className="border-gold/30 text-gold hover:bg-gold/10 rounded-xl px-6"
           >

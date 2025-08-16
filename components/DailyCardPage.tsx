@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { Button } from './ui/button';
-import { Card } from './ui/card';
-import { ArrowLeft, Stars, Sparkles, RefreshCw } from 'lucide-react';
-import { motion } from 'motion/react';
+import { useState } from "react";
+import { Button } from "./ui/button";
+import { Card } from "./ui/card";
+import { ArrowLeft, Stars, Sparkles, RefreshCw } from "lucide-react";
+import { motion } from "motion/react";
 
 interface DailyCardPageProps {
   onNavigate: (page: string) => void;
@@ -11,14 +11,14 @@ interface DailyCardPageProps {
 export default function DailyCardPage({ onNavigate }: DailyCardPageProps) {
   const [hasDrawnToday, setHasDrawnToday] = useState(false);
 
-  const todaysDate = new Date().toLocaleDateString('zh-CN', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
+  const todaysDate = new Date().toLocaleDateString("zh-CN", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
   });
 
   const handleDrawCard = () => {
-    onNavigate('animation');
+    onNavigate("animation");
   };
 
   return (
@@ -28,7 +28,7 @@ export default function DailyCardPage({ onNavigate }: DailyCardPageProps) {
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => onNavigate('home')}
+          onClick={() => onNavigate("home")}
           className="text-muted-foreground"
         >
           <ArrowLeft size={20} className="mr-2" />
@@ -89,8 +89,12 @@ export default function DailyCardPage({ onNavigate }: DailyCardPageProps) {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mb-8"
           >
-            <p className="text-muted-foreground mb-2">静心冥想，感受内心的声音</p>
-            <p className="text-sm text-muted-foreground">点击下方按钮，抽取你的每日指引牌</p>
+            <p className="text-muted-foreground mb-2">
+              静心冥想，感受内心的声音
+            </p>
+            <p className="text-sm text-muted-foreground">
+              点击下方按钮，抽取你的每日指引牌
+            </p>
           </motion.div>
 
           {/* 抽牌按钮 */}
@@ -107,7 +111,7 @@ export default function DailyCardPage({ onNavigate }: DailyCardPageProps) {
             >
               <motion.div
                 className="absolute inset-0 bg-white/20"
-                animate={{ x: ['-100%', '100%'] }}
+                animate={{ x: ["-100%", "100%"] }}
                 transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
               />
               <Sparkles size={20} className="mr-2" />
@@ -148,10 +152,12 @@ export default function DailyCardPage({ onNavigate }: DailyCardPageProps) {
           <p className="text-muted-foreground mb-4">今日已抽牌</p>
           <Card className="card-mystical p-6 mb-6">
             <h3 className="mb-2">愚者 (The Fool)</h3>
-            <p className="text-muted-foreground">新的开始即将到来，保持童心与好奇心。</p>
+            <p className="text-muted-foreground">
+              新的开始即将到来，保持童心与好奇心。
+            </p>
           </Card>
           <Button
-            onClick={() => onNavigate('calendar')}
+            onClick={() => onNavigate("calendar")}
             variant="outline"
             className="border-gold/30 text-gold hover:bg-gold/10"
           >
