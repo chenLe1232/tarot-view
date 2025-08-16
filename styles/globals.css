@@ -18,7 +18,7 @@
   --secondary: #8b5cf6;
   --secondary-foreground: #ffffff;
   --muted: rgba(42, 42, 74, 0.6);
-  --muted-foreground: #a0a0c0;
+  --muted-foreground: 240 240 192;
   --accent: linear-gradient(45deg, #fbbf24, #f59e0b);
   --accent-foreground: #1a1a3a;
   --destructive: #ef4444;
@@ -58,7 +58,7 @@
   --secondary: #8b5cf6;
   --secondary-foreground: #ffffff;
   --muted: rgba(42, 42, 74, 0.6);
-  --muted-foreground: #a0a0c0;
+  --muted-foreground: 240 240 192;
   --accent: #fbbf24;
   --accent-foreground: #1a1a3a;
   --destructive: #ef4444;
